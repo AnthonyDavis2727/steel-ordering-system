@@ -172,3 +172,11 @@
 .booking-form .submit-btn:focus {
 	opacity: 0.9;
 }
+
+.hide {
+	display: none;
+  }
+  
+.show {
+	display: block;
+  }

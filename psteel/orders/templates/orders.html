@@ -36,31 +36,55 @@
 						<form>
 							<div class="form-group">
 								<div class="form-checkbox">
-									<label for="roundtrip">
-										<input type="radio" id="roundtrip" name="flight-type">
-										<span></span>Roundtrip
+									<label for="plate-radio">
+										<input type="radio" id="plate-radio" name="department-radio" onclick="onLoad()">
+										<span></span>Plate
 									</label>
-									<label for="one-way">
-										<input type="radio" id="one-way" name="flight-type">
-										<span></span>One way
-									</label>
-									<label for="multi-city">
-										<input type="radio" id="multi-city" name="flight-type">
-										<span></span>Multi-City
+									<label for="bar-tool-radio">
+										<input type="radio" id="bar-tool-radio" name="department-radio" onclick="onLoad2()">
+										<span></span>Bar/Tool
 									</label>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-2 hide" id="plate-materials">
 									<div class="form-group">
-										<span class="form-label">Flying from</span>
-										<input class="form-control" type="text" placeholder="City or airport">
+										<span class="form-label">Material</span>
+										<select class="form-control ">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-2 hide" id="bar-tool-materials">
 									<div class="form-group">
-										<span class="form-label">Flyning to</span>
-										<input class="form-control" type="text" placeholder="City or airport">
+										<span class="form-label">Material</span>
+										<select class="form-control ">
+											<option>4</option>
+											<option>5</option>
+											<option>6</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Thickness</span>
+										<input class="form-control" type="text" placeholder="Enter Thickness">
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Width</span>
+										<input class="form-control" type="text" placeholder="Enter Width">
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Length</span>
+										<input class="form-control" type="text" placeholder="Length">
 									</div>
 								</div>
 							</div>
@@ -124,6 +148,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="{% static "js/script.js" %}"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
