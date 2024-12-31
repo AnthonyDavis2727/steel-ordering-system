@@ -32,7 +32,7 @@
 		<div class="section-center">
 			<div class="container">
 				<div class="row">
-					<div class="booking-form">
+					<div class="booking-form" id="booking-container">
 						<form>
 							<div class="form-group">
 								<div class="form-checkbox">
@@ -51,7 +51,7 @@
 									<div class="form-group">
 										<span class="form-label">Material</span>
 										<select class="form-control">
-											<option value="" disabled selected>Select your option</option>
+											<option value="" disabled selected>Select material</option>
 											<option>ASTM A-36 PLATE/HOT ROLL PLATE(CAN’T ANNEAL)</option>
 											<option>HOT ROLL QC PLATE</option>
 											<option>A-36 DOMESTIC</option>
@@ -86,60 +86,61 @@
 									<div class="form-group">
 										<span class="form-label">Material</span>
 										<select class="form-control ">
+											<option value="" disabled selected>Select material</option>
 											<option>HR BAR</option>
-												<option>HR SQUARE</option>
-												<option>HR ROUND</option>
-												<option>1018 HR ROUND</option>
-												<option>COLD ROLL FLAT</option>
-												<option>COLD ROLL ROUND</option>
-												<option>COLD ROLL SQUARE</option>
-												<option>4140 BAR'</option>
-												<option>4140 ANNEALED ROUNDS</option>
-												<option>4140 DCF ANNEALED</option>
-												<option>4140 DCF ANNEALED (NON -STANDARD)</option>
-												<option>4140 DCF PRE HARD (NON-STANDARD)</option>
-												<option>4140 HT REDI-CUT ROUNDS</option>
-												<option>FLAT GROUND</option>
-												<option>A-2 BAR</option>
-												<option>A-2 ROUND</option>
-												<option>A-2 PLATE</option>
-												<option>PREC. FLAT GROUND</option>
-												<option>OVERSIZED FLAT GROUND</option>
-												<option>D-2 WEAR DIE BAR</option>
-												<option>D-2 WEAR DIE ROUND</option>
-												<option>D-2 PLATE</option>
-												<option>D-2 PREC. FLAT GROUND</option>
-												<option>D-2 OVERSIZED FLAT GROUND</option>
-												<option>TUBE SQUARE</option>
-												<option>TUBE RECTANGLE (LARGER SIZE FIRST)</option>
-												<option>ANGLE (EX: 2X2X1/4X 40' = AN03203204)</option>
-												<option>WIDE FLANGE BEAM</option>
-												<option>STRUCTURAL CHANNEL</option>
-												<option>1018 HR ROUND</option>
-												<option>8620 PLATE</option>
-												<option>8620 ROUNDS</option>
-												<option>6061 ALUMINUM SHEET</option>
-												<option>6061 ALUMINUM BAR</option>
-												<option>6061 ALUMINUM ROUND</option>
-												<option>6061 ALUMINUM SQUARE</option>
-												<option>1045 TG&P ROUNDS</option>
-												<option>CAST TOOL PLATE</option>
-												<option>S-7 BAR</option>
-												<option>S-7 ROUND</option>
-												<option>S-7 PLATE</option>
-												<option>H-13 ROUND</option>
-												<option>H-13 PLATE</option>
-												<option>DOM TUBE</option>
-												<option>O-1 BAR</option>
-												<option>O-1 ROUND</option>
-												<option>O-1 PLATE</option>
-												<option>O-1 FLAT GROUND</option>
-												<option>O-1 OVERSIZED FLAT GROUND</option>
-												<option>STANDARD I-BEAM</option>
-												<option>T-1 PLATE</option>
-												<option>CD STRESSPROOF</option>
-												<option>304 STAINLESS STEEL PLATE</option>
-												<option>304 STAINLESS STEEL ROUND</option>
+											<option>HR SQUARE</option>
+											<option>HR ROUND</option>
+											<option>1018 HR ROUND</option>
+											<option>COLD ROLL FLAT</option>
+											<option>COLD ROLL ROUND</option>
+											<option>COLD ROLL SQUARE</option>
+											<option>4140 BAR'</option>
+											<option>4140 ANNEALED ROUNDS</option>
+											<option>4140 DCF ANNEALED</option>
+											<option>4140 DCF ANNEALED (NON -STANDARD)</option>
+											<option>4140 DCF PRE HARD (NON-STANDARD)</option>
+											<option>4140 HT REDI-CUT ROUNDS</option>
+											<option>FLAT GROUND</option>
+											<option>A-2 BAR</option>
+											<option>A-2 ROUND</option>
+											<option>A-2 PLATE</option>
+											<option>PREC. FLAT GROUND</option>
+											<option>OVERSIZED FLAT GROUND</option>
+											<option>D-2 WEAR DIE BAR</option>
+											<option>D-2 WEAR DIE ROUND</option>
+											<option>D-2 PLATE</option>
+											<option>D-2 PREC. FLAT GROUND</option>
+											<option>D-2 OVERSIZED FLAT GROUND</option>
+											<option>TUBE SQUARE</option>
+											<option>TUBE RECTANGLE (LARGER SIZE FIRST)</option>
+											<option>ANGLE (EX: 2X2X1/4X 40' = AN03203204)</option>
+											<option>WIDE FLANGE BEAM</option>
+											<option>STRUCTURAL CHANNEL</option>
+											<option>1018 HR ROUND</option>
+											<option>8620 PLATE</option>
+											<option>8620 ROUNDS</option>
+											<option>6061 ALUMINUM SHEET</option>
+											<option>6061 ALUMINUM BAR</option>
+											<option>6061 ALUMINUM ROUND</option>
+											<option>6061 ALUMINUM SQUARE</option>
+											<option>1045 TG&P ROUNDS</option>
+											<option>CAST TOOL PLATE</option>
+											<option>S-7 BAR</option>
+											<option>S-7 ROUND</option>
+											<option>S-7 PLATE</option>
+											<option>H-13 ROUND</option>
+											<option>H-13 PLATE</option>
+											<option>DOM TUBE</option>
+											<option>O-1 BAR</option>
+											<option>O-1 ROUND</option>
+											<option>O-1 PLATE</option>
+											<option>O-1 FLAT GROUND</option>
+											<option>O-1 OVERSIZED FLAT GROUND</option>
+											<option>STANDARD I-BEAM</option>
+											<option>T-1 PLATE</option>
+											<option>CD STRESSPROOF</option>
+											<option>304 STAINLESS STEEL PLATE</option>
+											<option>304 STAINLESS STEEL ROUND</option>
 										</select>
 										<span class="select-arrow"></span>
 									</div>

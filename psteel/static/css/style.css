@@ -180,3 +180,13 @@
 .show {
 	display: block;
   }
+
+.add-margin {
+	margin-top: 50px;
+}
+
+@media  screen and (max-width: 991px) {
+	.booking-form {
+		margin-top: 50px;
+	}
+}
